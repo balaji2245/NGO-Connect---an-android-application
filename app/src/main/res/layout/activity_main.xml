@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bmrd.stesbuddy.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/main_app_bar2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:subtitleTextColor="@color/common_google_signin_btn_text_dark_default"
+        app:titleTextColor="@color/common_google_signin_btn_text_dark_default">
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/main_app_bar2"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/emailText"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/nameText" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="131dp"
+        android:text="Get your location" />
+
+    <Button
+        android:id="@+id/NGO_lg_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button3"
+        android:layout_alignStart="@+id/button3"
+        android:layout_marginBottom="64dp"
+        android:text="NGO Login" />
+
+    <Button
+        android:id="@+id/selectedBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/emailText"
+        android:layout_alignEnd="@+id/restLoginBTN"
+        android:layout_marginEnd="16dp"
+        android:text="Got selected in" />
+
+    <Button
+        android:id="@+id/allNGObtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/NGO_lg_btn"
+        android:layout_alignEnd="@+id/emailText"
+        android:layout_marginBottom="47dp"
+        android:layout_marginEnd="51dp"
+        android:text="All NGO" />
+
+    <Button
+        android:id="@+id/restLoginBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/allNGObtn"
+        android:layout_toEndOf="@+id/NGO_lg_btn"
+        android:text="Restaurant Login" />
+
+    <Button
+        android:id="@+id/adminBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/allNGObtn"
+        android:layout_marginBottom="36dp"
+        android:layout_marginStart="23dp"
+        android:text="Admin Login" />
+
+    <Button
+        android:id="@+id/myInfoBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/allNGObtn"
+        android:layout_below="@+id/nameText"
+        android:text="My info" />
+
+</RelativeLayout>

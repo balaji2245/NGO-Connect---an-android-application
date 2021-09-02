@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bmrd.stesbuddy.AdminLoginActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/main_app_bar2"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/colorPrimaryDark"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:subtitleTextColor="@color/common_google_signin_btn_text_dark_default"
+        app:titleTextColor="@color/common_google_signin_btn_text_dark_default">
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <TextView
+        android:id="@+id/NGOnameText"
+        android:layout_width="352dp"
+        android:layout_height="61dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="71dp" />
+
+    <Button
+        android:id="@+id/acceptRestBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NGOnameText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="108dp"
+        android:text="Accept Restaurant" />
+
+    <Button
+        android:id="@+id/acceptNGOBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/acceptRestBTN"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="102dp"
+        android:text="Accept NGO" />
+
+</RelativeLayout>
+
+
+
+

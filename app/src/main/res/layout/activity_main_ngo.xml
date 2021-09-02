@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bmrd.stesbuddy.MainNGOActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/main_app_bar2"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/colorPrimaryDark"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:subtitleTextColor="@color/common_google_signin_btn_text_dark_default"
+        app:titleTextColor="@color/common_google_signin_btn_text_dark_default">
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/NGOnameText"
+        android:layout_width="352dp"
+        android:layout_height="61dp"
+        android:layout_alignEnd="@+id/vacancyText"
+        android:layout_below="@+id/main_app_bar2"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="71dp" />
+
+    <Button
+        android:id="@+id/change_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vacancyText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:text="Update"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="494dp" />
+
+    <Button
+        android:id="@+id/addRESTbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NGOnameText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125dp"
+        android:text="List of applied volunnteers" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/NGOnameText"
+        android:layout_below="@+id/addRESTbtn"
+        android:layout_marginTop="42dp"
+        android:text="Date of Event:"
+        android:textSize="16dp"
+        android:id="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/vacancyText"
+        android:layout_alignBottom="@+id/vacancyText"
+        android:layout_alignStart="@+id/textView15"
+        android:text="No. of Vacancies:"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/dateTextEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView15"
+        android:layout_alignBottom="@+id/textView15"
+        android:layout_alignEnd="@+id/NGOnameText"
+        android:ems="10"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/vacancyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/change_button"
+        android:layout_below="@+id/dateTextEnter"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/getLocBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NGOnameText"
+        android:layout_marginTop="59dp"
+        android:layout_toEndOf="@+id/textView15"
+        android:text="Get your location" />
+
+</RelativeLayout>
+
+
+
+

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bmrd.stesbuddy">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/AppTheme1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".StartActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".ContactActivity" />
+        <activity
+            android:name=".NotificationListActivity"
+            android:theme="@style/AppTheme1" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBvd0L_sWrVvvK_WJiky4pfXeO6j43SVRI" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".FindingDistance" />
+        <activity android:name=".MainNGOActivity"
+
+            android:theme="@style/AppTheme1" />
+
+        <activity android:name=".ShowNGOActivity" />
+        <activity android:name=".NearNGOActivity" />
+        <activity android:name=".OnlyNearNGOActivity" />
+        <activity android:name=".SelectedNGO" />
+        <activity android:name=".AppliedListActivity" />
+        <activity android:name=".NearRESTActivity" />
+        <activity android:name=".SelectedREST" />
+        <activity android:name=".OnlyNearRESTActivity" />
+        <activity android:name=".MainRESTActivity"
+
+            android:theme="@style/AppTheme1" />
+
+        <activity android:name=".FoodAcceptedActivity" />
+        <activity android:name=".AdminLoginActivity"
+
+            android:theme="@style/AppTheme1" />
+
+        <activity android:name=".AdddRESTActivity" />
+        <activity
+            android:name=".MapsActivity2"
+            android:label="@string/title_activity_maps2" />
+        <activity android:name=".AddNGOActivity" />
+        <activity
+            android:name=".MapsActivity3"
+            android:label="@string/title_activity_maps3" />
+        <activity android:name=".MyInfoActivity" />
+        <activity android:name=".SelectedVolunteer" />
+        <activity android:name=".GotSelectedInActivity" />
+        <activity android:name=".DiffLoginActivity" />
+        <activity android:name=".WaitingActivity" />
+        <activity android:name=".LoginRestActivity" />
+        <activity android:name=".LoginNGOActivity" />
+        <activity android:name=".LoginAdminActivity" />
+        <activity android:name=".DiffRegisterActivity" />
+        <activity android:name=".RegisterRestActivity" />
+        <activity android:name=".REST24Activity" />
+        <activity android:name=".RegisterNGOActivity" />
+        <activity android:name=".AcceptRestActivity" />
+        <activity android:name=".AcceptNGOActivity" />
+        <activity android:name=".SelectedNGO2" />
+        <activity android:name=".AcceptNGOActivity2" />
+        <activity android:name=".AcceptRestActivity2" />
+        <activity android:name=".SelectedREST2" />
+        <activity android:name=".HomVolActivity"
+
+            android:theme="@style/AppTheme1" />
+
+        <activity android:name=".MapsActivity4" />
+        <activity android:name=".MapsActivity5" />
+        <activity android:name=".RecommendActivity" />
+        <activity android:name=".OnlyRecommendActivity"></activity>
+
+        <service
+            android:name=".MyMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>AndroidManifest.xml
+
+    </application>
+
+</manifest>
